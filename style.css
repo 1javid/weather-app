@@ -6,7 +6,7 @@ body {
     align-items: center;
     text-align: center;
     font-family: 'EB Garamond', serif;
-    color: rgb(52, 50, 50);
+    color: rgba(0, 0, 0, 0.362);
 }
 
 hr {
@@ -20,7 +20,6 @@ hr {
 }
 
 p {
-    color: rgb(102, 110, 118);
     text-align: left;
     margin-left: 10px;
 }
@@ -35,7 +34,7 @@ h4 {
     width: 33rem;
     height: 40rem;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
-    border-radius: 8px;
+    border-radius: 10px;
     position: relative;
     z-index: 1;
     background: inherit;
@@ -50,7 +49,7 @@ h4 {
     width: 6.5rem;
     height: 6.5rem;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
-    border-radius: 8px;
+    border-radius: 10px;
     position: relative;
     z-index: 1;
     background: inherit;
@@ -62,7 +61,7 @@ h4 {
     width: 20rem;
     height: 12rem;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
-    border-radius: 5px;
+    border-radius: 10px;
     position: relative;
     z-index: 1;
     background: inherit;
@@ -79,7 +78,7 @@ h4 {
     width: 20rem;
     height: 3rem;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
-    border-radius: 5px;
+    border-radius: 10px;
     position: relative;
     z-index: 1;
     background: inherit;
