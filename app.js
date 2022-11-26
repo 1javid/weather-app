@@ -77,7 +77,8 @@ function findWeather(latitude, longitude) {
                                                 </div>
                                             </div>
                                             <div class="inner-footer-containers">
-                                            <div id="timeContainer">${localTime} ${localDate}</div>
+                                                <p>${localTime}</p>
+                                                <p>${localDate}</p>
                                             </div>`);
         })
 }

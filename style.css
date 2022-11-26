@@ -42,18 +42,12 @@ h4 {
     background-image: url("background.jpg");
 }
 
-#feelsLikeContainer,
-#humidityContainer,
-#pressureContainer,
-#windSpeedContainer {
-    width: 6.5rem;
-    height: 6.5rem;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
-    border-radius: 10px;
-    position: relative;
-    z-index: 1;
-    background: inherit;
-    overflow: hidden;
+.inner-main-containers {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #importantContainer {
@@ -73,7 +67,29 @@ h4 {
     flex-direction: row;
 }
 
-#timeContainer {
+.inner-detail-containers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 60px 0 60px 0;
+}
+
+#feelsLikeContainer,
+#humidityContainer,
+#pressureContainer,
+#windSpeedContainer {
+    width: 6.5rem;
+    height: 6.5rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+}
+
+.inner-footer-containers {
     margin: auto;
     width: 20rem;
     height: 3rem;
@@ -84,7 +100,7 @@ h4 {
     background: inherit;
     overflow: hidden;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -94,7 +110,7 @@ h4 {
 #humidityContainer:before,
 #pressureContainer:before,
 #windSpeedContainer:before,
-#timeContainer:before {
+.inner-footer-containers:before {
     content: "";
     position: absolute;
     background: inherit;
@@ -108,68 +124,32 @@ h4 {
     margin: -20px;
 }
 
-.inner-main-containers {
-    margin-top: 40px;
+@media only screen and (max-width: 445px) {
+    .weather-container {
+        height: 60rem;
+    }
+
+    .inner-detail-containers {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #humidityContainer,
+    #pressureContainer,
+    #windSpeedContainer {
+        margin-top: 10px;
+    }
+
 }
 
-.inner-main-containers,
-.inner-footer-containers {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
+@media only screen and (max-width: 370px) {
+    .weather-container {
+        height: 65rem;
+    }
 
-.inner-detail-containers {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 60px 0 60px 0;
-}
-
-.about-me-card>hr {
-    margin: 0;
-}
-
-.about-me-head>h1 {
-    text-align: center;
-}
-
-.about-me-head>img {
-    margin-top: 21px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    border-radius: 50%;
-    border: 1px solid #ea1d6f;
-}
-
-.about-me-main {
-    padding-left: 50px;
-    padding-right: 50px;
-    text-align: center;
-}
-
-.about-me-main>p {
-    width: 70%;
-}
-
-.about-me-skills {
-    text-align: center;
-}
-
-.skills {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.skills>h4 {
-    border: 1px solid #ea1d6f;
-    border-radius: 5%;
-    padding: 15px;
-    margin-left: 5px;
+    .inner-footer-containers {
+        flex-direction: column;
+        height: 8rem;
+        width: 18rem;
+    }
 }
