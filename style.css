@@ -48,17 +48,21 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(67, 66, 66);
 }
 
 #city,
 #lat,
 #lon {
-    border: 1px solid rgb(99, 132, 146);
-    border-radius: 25px;
+    color: rgb(67, 66, 66);
+    background-color: rgb(185, 235, 255);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
 }
 
 #geo {
-    border: 1px solid rgb(99, 132, 146);
+    border: 1px solid rgb(155, 197, 215);
     background-color: white;
     border-radius: 25px;
 }
