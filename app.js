@@ -87,7 +87,7 @@ function createData(response) {
     let localTime = date.toLocaleTimeString("en-US")
     let localDate = date.toLocaleDateString("en-US");
 
-    getFullCountryName(countryCode, city.split(' ')[0]);
+    getFullCountryName(countryCode, city);
 
     $('.weather-details').append(`  <div class="inner-main-containers">
                                                 <div id="importantContainer">
