@@ -5,6 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-direction: column;
     font-family: 'EB Garamond', serif;
     color: rgba(0, 0, 0, 0.362);
 }
@@ -27,6 +28,39 @@ p {
 h4 {
     font-size: 17px;
     margin: auto;
+}
+
+.navbar {
+    display: inline;
+}
+
+.navbar>div {
+    margin: 25px 0 25px 0;
+    width: 30rem;
+    height: 4rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#city,
+#lat,
+#lon {
+    border: 1px solid rgb(99, 132, 146);
+    border-radius: 25px;
+}
+
+#geo {
+    border: 1px solid rgb(99, 132, 146);
+    background-color: white;
+    border-radius: 25px;
 }
 
 .weather-container {
